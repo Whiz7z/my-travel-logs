@@ -1,0 +1,89 @@
+@import "../style/variables.scss";
+
+.container {
+  width: 100%;
+  display: grid;
+  margin-bottom: 200px;
+  .content {
+    justify-self: center;
+    max-width: 1820px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 8fr 10fr;
+    column-gap: 60px;
+    .form_container {
+      display: grid;
+      width: 550px;
+      justify-self: end;
+      h1 {
+        font-size: 8.2rem;
+        margin-bottom: 40px;
+      }
+
+      form {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+      }
+
+      .inputs {
+        font-size: 2.1rem;
+        color: $text;
+        height: 55px;
+        border: 3px solid $text;
+        border-radius: 5px;
+        padding-left: 25px;
+      }
+
+      .textarea {
+        font-size: 2.1rem;
+        color: $text;
+        border: 3px solid $text;
+        border-radius: 5px;
+        font-family: "Lato", sans-serif;
+        min-height: 220px;
+        padding-left: 25px;
+        padding-top: 20px;
+      }
+
+      .submit_btn {
+        height: 70px;
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 70px;
+      }
+    }
+
+    .image {
+      justify-self: end;
+      height: 795px;
+    }
+
+    @media (max-width: 1830px) {
+      .form_container {
+        width: 450px;
+        max-width: 550px;
+      }
+      .image {
+        height: 600px;
+        align-self: center;
+      }
+    }
+
+    @media (max-width: 1320px) {
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+      .form_container {
+        justify-self: center;
+        width: 550px;
+        grid-row: 2/3;
+      }
+
+      .image {
+        height: 680px;
+        justify-self: center;
+        grid-row: 1/2;
+      }
+    }
+  }
+}

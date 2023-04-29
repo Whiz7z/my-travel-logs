@@ -1,0 +1,12 @@
+.headerContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  background-image: url("../img/header-big-scribble.png"),
+    url("../img/header-scribble-dark.png");
+  background-repeat: no-repeat;
+  background-size: 620px auto, 120px auto;
+
+  background-position-y: 370px, calc(100% + 80px);
+  background-position-x: 0, 100%;
+}

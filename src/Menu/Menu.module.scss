@@ -1,0 +1,38 @@
+@import "../style/variables.scss";
+
+.menuSection {
+  justify-self: center;
+  max-width: 1820px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 8fr 10fr;
+  height: 205px;
+  align-items: center;
+  .menu_list {
+    grid-column: 1/2;
+    width: 470px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap: 70px;
+    .menu_list_item {
+      font-size: 2rem;
+      font-weight: 300;
+      color: $text;
+    }
+  }
+  .buttonContainer {
+    grid-column: 2/3;
+    justify-self: self-end;
+    .button {
+      width: 220px;
+      height: 60px;
+      font-size: 2rem;
+      font-weight: 900;
+    }
+  }
+
+  @media (min-width: 1730px) {
+  }
+}

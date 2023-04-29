@@ -1,0 +1,88 @@
+@import "../style/variables.scss";
+
+.container {
+  background-color: $text;
+  display: grid;
+  width: 100%;
+
+  background-image: url("../img/scribble-choose-section.png");
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  margin-bottom: 150px;
+  .content {
+    max-width: 1820px;
+    width: 80%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 9fr 10fr;
+    column-gap: 105px;
+    margin: 200px 0;
+
+    .titles {
+      grid-column: 1/2;
+      color: $light;
+      display: grid;
+      row-gap: 50px;
+      justify-self: start;
+      h1 {
+        font-size: 5.5rem;
+        margin-bottom: 50px;
+      }
+
+      h3 {
+        font-family: "Lato", sans-serif;
+        font-size: 2.6rem;
+        font-weight: 900;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.8rem;
+        text-align: justify;
+        text-align-last: left;
+        width: 600px;
+      }
+    }
+
+    .picture {
+      grid-column: 2/3;
+      justify-self: end;
+      position: relative;
+    }
+  }
+
+  @media (max-width: 1830px) {
+    .content {
+      margin: 120px 0;
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+      .titles {
+        justify-self: center;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        .subtitle {
+          grid-column: 2/3;
+        }
+      }
+
+      .picture {
+        grid-column: 1/2;
+        justify-self: center;
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .content {
+      .titles {
+        grid-template-columns: 1fr;
+        h1 {
+          text-align: center;
+        }
+        .subtitle {
+          grid-column: 1/2;
+        }
+      }
+    }
+  }
+}

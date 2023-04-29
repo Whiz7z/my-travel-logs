@@ -1,0 +1,43 @@
+@import "../style/variables.scss";
+.myLogs_section {
+  background-color: $text;
+  display: grid;
+
+  background-image: url("../img/scribble-log-left.png"),
+    url("../img/scribble-log-right.png");
+
+  background-repeat: no-repeat;
+
+  background-position-y: 50px, 230px;
+  background-position-x: 0, 100%;
+
+  .myLogs_content {
+    width: 455px;
+    display: grid;
+    justify-self: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    row-gap: 30px;
+    h2 {
+      color: $light;
+      font-size: 5.5rem;
+      font-weight: 900;
+      text-align: center;
+    }
+    p {
+      color: $light;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    .logsBtn {
+      color: $light;
+      border-color: $light;
+      width: 260px;
+      height: 60px;
+      font-size: 2rem;
+      font-weight: 900;
+      justify-self: center;
+      margin-top: 10px;
+    }
+  }
+}

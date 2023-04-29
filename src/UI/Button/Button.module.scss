@@ -1,0 +1,19 @@
+@import "../../style/variables.scss";
+
+.btn_transparent {
+  border: 3px solid $text;
+  background-color: transparent;
+  color: $text;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn_filled {
+  border: 3px solid $text;
+  background-color: $text;
+  color: $light;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
