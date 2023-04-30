@@ -38,6 +38,13 @@
       font-weight: 900;
       justify-self: center;
       margin-top: 10px;
+      transition: 300ms;
+
+      &:hover {
+        transition: 300ms;
+        background-color: $light;
+        color: $text;
+      }
     }
   }
 

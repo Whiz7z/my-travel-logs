@@ -60,6 +60,7 @@
         justify-self: center;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
+        column-gap: 30px;
         .subtitle {
           grid-column: 2/3;
         }

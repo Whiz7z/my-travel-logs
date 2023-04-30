@@ -7,6 +7,13 @@
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+  transition: 300ms;
+
+  &:hover {
+    transition: 300ms;
+    background-color: $text;
+    color: $light;
+  }
 }
 
 .btn_filled {
@@ -16,4 +23,11 @@
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+  transition: 300ms;
+
+  &:hover {
+    transition: 300ms;
+    background-color: transparent;
+    color: $text;
+  }
 }

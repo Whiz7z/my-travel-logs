@@ -30,9 +30,7 @@ const ContactUs = () => {
               placeholder="Write tour message..."
               className={styles.textarea}
             ></textarea>
-            <Button filled theme={styles.submit_btn}>
-              Submit Email
-            </Button>
+            <Button theme={styles.submit_btn}>Submit Email</Button>
           </form>
         </div>
         <img alt="image us" src={image} className={styles.image} />
