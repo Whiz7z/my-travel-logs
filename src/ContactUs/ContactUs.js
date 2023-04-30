@@ -6,7 +6,7 @@ import Button from "../UI/Button/Button";
 const ContactUs = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.content}>
+      <div className={styles.content} id={"contact"}>
         <div className={styles.form_container}>
           <h1>Be updated!</h1>
           <form>

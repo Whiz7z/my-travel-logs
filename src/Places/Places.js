@@ -9,7 +9,12 @@ const Places = () => {
   return (
     <section className={styles.places_container}>
       <section className={styles.places_title}>
-        <img alt="plane" src={planePhoto} className={styles.plane_photo} />
+        <img
+          alt="plane"
+          src={planePhoto}
+          className={styles.plane_photo}
+          id="places"
+        />
         <h1>
           See places you've <span>never</span> been before
         </h1>

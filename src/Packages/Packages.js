@@ -5,7 +5,7 @@ import image from "../img/packages-img.png";
 
 const Packages = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="packages">
       <div className={styles.content}>
         <div className={styles.packages}>
           <h1>Our most popular travel packages</h1>

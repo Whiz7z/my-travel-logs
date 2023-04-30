@@ -3,6 +3,7 @@ import styles from "./Menu.module.scss";
 import Button from "./../UI/Button/Button";
 import { NavLink, useLocation } from "react-router-dom";
 import { FaTimes, FaBars } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Menu = () => {
   const navRef = useRef();
@@ -37,34 +38,42 @@ const Menu = () => {
             }
             onClick={() => hideBar()}
           >
-            Home
+            <Link to="home" py={true} smooth={true}>
+              Home
+            </Link>
           </NavLink>
         </li>
-        <li key={"guide"} className={styles.menu_list_item}>
+        <li className={styles.menu_list_item}>
           <NavLink
-            to="guide"
+            to="places"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
             onClick={() => hideBar()}
           >
-            Guides
+            <Link to="places" py={true} smooth={true}>
+              Places
+            </Link>
           </NavLink>
         </li>
-        <li key={"flights"} className={styles.menu_list_item}>
+        <li className={styles.menu_list_item}>
           <NavLink
-            to="flight"
+            to="packages"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
             onClick={() => hideBar()}
           >
-            Flight
+            <Link to="packages" py={true} smooth={true}>
+              Packages
+            </Link>
           </NavLink>
         </li>
-        <li key={"about"} className={styles.menu_list_item}>
+        <li className={styles.menu_list_item}>
           <NavLink
-            to="about"
+            to="contact"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
             onClick={() => hideBar()}
           >
-            About
+            <Link to="contact" py={true} smooth={true}>
+              Contact
+            </Link>
           </NavLink>
         </li>
         <button
