@@ -85,4 +85,24 @@
       }
     }
   }
+
+  @media (max-width: 1080px) {
+    .content {
+      .picture {
+        justify-self: center;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 790px) {
+    background-size: 70%;
+    .content {
+      .titles {
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

@@ -87,4 +87,36 @@
       }
     }
   }
+
+  @media (max-width: 880px) {
+    .info_container {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+    .image_container {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .info_container {
+      h1 {
+        font-size: 3.6rem;
+        margin-top: 20px;
+      }
+
+      button {
+        width: 200px;
+        font-size: 1.6rem;
+      }
+    }
+    .image_container {
+      img {
+        width: 100%;
+      }
+    }
+  }
 }

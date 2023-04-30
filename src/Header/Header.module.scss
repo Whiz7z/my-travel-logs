@@ -9,4 +9,18 @@
 
   background-position-y: 370px, calc(100% + 80px);
   background-position-x: 0, 100%;
+
+  @media (max-width: 1840px) {
+    background-size: 30%, auto;
+    background-position-y: 800px, calc(100% + 80px);
+  }
+  @media (max-width: 1140px) {
+    background-size: 30%, auto;
+    background-position-y: 820px, calc(100% + 80px);
+  }
+
+  @media (max-width: 870px) {
+    background-size: 30%, 15%;
+    background-position-y: 820px, calc(100% + 80px);
+  }
 }

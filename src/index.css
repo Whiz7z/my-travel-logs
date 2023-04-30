@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  /* outline: 1px solid #f00 !important; */
 }
 
 html {
@@ -18,6 +19,27 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: "#e9e7e7";
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #232323;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eab839;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6a603c;
 }
 
 code {
