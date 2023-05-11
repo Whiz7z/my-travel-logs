@@ -36,9 +36,8 @@ const Menu = () => {
             style={({ isActive }) =>
               isActive | (location.pathname === "/") ? activeStyle : undefined
             }
-            onClick={() => hideBar()}
           >
-            <Link to="home" py={true} smooth={true}>
+            <Link to="home" py={true} smooth={true} onClick={() => showBar()}>
               Home
             </Link>
           </NavLink>
@@ -49,7 +48,7 @@ const Menu = () => {
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
             onClick={() => hideBar()}
           >
-            <Link to="places" py={true} smooth={true}>
+            <Link to="places" py={true} smooth={true} onClick={() => showBar()}>
               Places
             </Link>
           </NavLink>
@@ -60,7 +59,12 @@ const Menu = () => {
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
             onClick={() => hideBar()}
           >
-            <Link to="packages" py={true} smooth={true}>
+            <Link
+              to="packages"
+              py={true}
+              smooth={true}
+              onClick={() => showBar()}
+            >
               Packages
             </Link>
           </NavLink>
@@ -71,7 +75,12 @@ const Menu = () => {
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
             onClick={() => hideBar()}
           >
-            <Link to="contact" py={true} smooth={true}>
+            <Link
+              to="contact"
+              py={true}
+              smooth={true}
+              onClick={() => showBar()}
+            >
               Contact
             </Link>
           </NavLink>
